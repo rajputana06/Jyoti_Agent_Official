@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jyoti Agent - Sovereign AI for Digital Bharat | RJS 06</title>
+    <meta name="description" content="Jyoti Agent is an advanced Multi-Sector AI Voice Assistant by RajputanaJyoti System06 OPC Pvt Ltd. Empowering Indian farmers and citizens with local language intelligence in Agriculture, Health, Law, and Education.">
+    <meta name="keywords" content="Jyoti Agent, Rajputana Jyoti System 06, Shivlal Salvi, AI Voice Assistant, Digital Bharat, Indian AI, Agriculture AI, iStart Rajasthan">
+    
+    <meta property="og:title" content="Jyoti Agent - The Future of Digital Bharat">
+    <meta property="og:description" content="A Sovereign AI Ecosystem by Rajputana Jyoti System 06 OPC Pvt Ltd.">
+    <meta property="og:image" content="images/RJS.jpg"> 
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Global & Light Theme Settings --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* Background image */
+            background-image: url('images/apni-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            background-color: #E9ECEF;
+            color: #333333;
+            line-height: 1.7;
+            overflow-x: hidden; 
+        }
+
+        /* Transparent Light Overlay */
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.65); 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 25px 40px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 70px; 
+            border-bottom: 5px solid #0056b3;
+        }
+
+        .logo-box {
+            width: 110px;
+            height: 110px;
+            margin-right: 30px;
+            border: 4px solid #0056b3;
+            border-radius: 0; 
+            overflow: hidden;
+            animation: pulse-logo 2s infinite ease-in-out;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            flex-shrink: 0;
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes pulse-logo {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        .header-title h1 {
+            font-size: 1.9rem;
+            color: #003366;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .header-title p {
+            font-size: 1.2rem;
+            color: #444444;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        /* --- Hero Banner --- */
+        .hero-banner {
+            background: linear-gradient(135deg, #004D40, #00796B);
+            color: #ffffff;
+            padding: 50px 50px;
+            margin-bottom: 150px; /* Long Scroll Gap */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .hero-banner h2 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .active-soon-text {
+            display: inline-block;
+            color: #FFEB3B;
+            font-weight: 700;
+            text-shadow: 0 0 15px rgba(255, 235, 59, 0.6);
+            animation: blink-anim 1.5s infinite;
+        }
+
+        @keyframes blink-anim {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* --- Standard Connection Cards --- */
+        .tech-card {
+            display: flex;
+            background: rgba(255, 255, 255, 0.98); 
+            margin-bottom: 150px; 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+            border-radius: 12px;
+            overflow: hidden;
+            border-left-width: 8px;
+            border-left-style: solid;
+            align-items: stretch; 
+        }
+
+        /* Border Colors */
+        .border-company { border-left-color: #0056b3; }
+        .border-cloudflare { border-left-color: #F6821F; }
+        .border-agri { border-left-color: #2E7D32; }
+        .border-edu { border-left-color: #1565C0; }
+        .border-health { border-left-color: #EF6C00; }
+        .border-law { border-left-color: #4527A0; }
+        .border-nature { border-left-color: #00695C; }
+        .border-industrial { border-left-color: #B71C1C; }
+        .border-founder { border-left-color: #FF8F00; }
+
+        /* --- Special "About Company" Card Layout Fix --- */
+        .company-card {
+            overflow: visible; 
+            align-items: center;
+        }
+
+        .company-card .image-box {
+            flex: 0 0 380px; 
+            margin-left: -30px; 
+            margin-top: -20px; 
+            margin-bottom: -20px; 
+            border-radius: 12px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
+            z-index: 5; 
+            border: 4px solid #FFFFFF; 
+            background: white; 
+            height: 350px;
+        }
+
+        .company-card .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px; 
+        }
+
+        .company-card .text-box {
+            flex: 1; 
+            padding: 40px 50px;
+            z-index: 1; 
+            word-wrap: break-word; 
+        }
+
+        /* General Image Box */
+        .image-box:not(.agri-photo-grid):not(.company-card .image-box) {
+            width: 380px;
+            flex-shrink: 0;
+            border-right: 1px solid #DDDDDD;
+            background: #f9f9f9;
+        }
+        .image-box:not(.agri-photo-grid):not(.company-card .image-box) img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Agriculture 3-Image Grid */
+        .agri-photo-grid {
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+            width: 380px; 
+            border-right: 1px solid #DDDDDD;
+        }
+        .agri-grid-image {
+            flex: 1; 
+            border-bottom: 2px solid #FFFFFF;
+        }
+        .agri-grid-image:last-child { border-bottom: none; }
+        .agri-grid-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Text Content */
+        .tech-card:not(.company-card) .text-box {
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            flex-grow: 1;
+            word-wrap: break-word;
+        }
+
+        .text-box h2, .text-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .text-box p {
+            font-size: 1.15rem;
+            color: #444444;
+            margin-bottom: 10px;
+        }
+
+        .detail-tag {
+            display: inline-block;
+            background: #E3F2FD;
+            padding: 12px 20px;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #0D47A1;
+            border-left: 4px solid #0D47A1;
+            font-size: 1rem;
+            align-self: flex-start;
+        }
+        
+        .mca-tag { padding: 10px 15px; display: inline-block; margin-top: 15px; margin-bottom: 5px; } 
+
+        .company-contact-list { list-style: none; margin-top: 15px; font-size: 1.05rem; color: #333; font-weight: 500;}
+        .company-contact-list li { margin-bottom: 8px; }
+
+        /* --- Warning Banner (Government Data) --- */
+        .warning-banner {
+            background: rgba(255, 243, 224, 0.95);
+            border: 2px solid #FFB74D;
+            border-left: 10px solid #E65100;
+            padding: 60px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+            border-radius: 12px;
+        }
+        
+        .warning-banner h2 {
+            color: #E65100;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .warning-banner p {
+            font-size: 1.25rem;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .highlight-text {
+            color: #B71C1C;
+            font-weight: 700;
+        }
+
+        .spacer-quote {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 80px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        /* --- Footer & Privacy Button --- */
+        footer {
+            background: rgba(20, 25, 30, 0.98); 
+            color: #FFFFFF;
+            padding: 60px 20px;
+            margin-top: auto;
+            border-top: 5px solid #0056b3;
+            text-align: center;
+        }
+
+        .footer-content { max-width: 1100px; margin: 0 auto; }
+        .footer-content h4 { color: #A0C4FF; margin-bottom: 20px; font-size: 1.5rem; text-transform: uppercase; }
+
+        .footer-contact-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .footer-contact-list li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-address {
+            font-size: 1.1rem;
+            color: #CCCCCC;
+            line-height: 1.8;
+            border-top: 1px dashed #555;
+            padding-top: 20px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .privacy-btn {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+            transition: transform 0.2s;
+            margin-bottom: 20px;
+        }
+
+        .privacy-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
+        }
+
+        /* --- Modal / Popup Styling --- */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0; top: 0; width: 100%; height: 100%; 
+            overflow: hidden; 
+            background-color: rgba(0,0,0,0.8); 
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 5% auto; 
+            padding: 40px;
+            border: 2px solid #FF9800;
+            width: 90%; 
+            max-width: 800px;
+            max-height: 80vh;
+            border-radius: 12px;
+            overflow-y: auto; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            text-align: left;
+        }
+
+        .close-btn {
+            color: #FF9800;
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: -15px;
+        }
+
+        .close-btn:hover { color: #ffffff; }
+
+        .modal-content h1 { color: #FF9800; text-align: center; border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px;}
+        .modal-content h2 { color: #FF9800; margin-top: 30px; font-size: 1.4rem; }
+        .modal-content h3 { color: #aaaaaa; margin-top: 20px; font-size: 1.2rem; }
+        .modal-content p, .modal-content li { font-size: 1.05rem; line-height: 1.6; color: #dddddd; }
+        .modal-content ul { margin-left: 20px; margin-bottom: 15px; }
+
+        /* --- MOBILE RESPONSIVENESS --- */
+        @media (max-width: 900px) {
+            header { flex-direction: column; text-align: center; }
+            .logo-box { margin-right: 0; margin-bottom: 15px; }
+            
+            .tech-card, .company-card { flex-direction: column; align-items: stretch; margin-bottom: 80px; }
+            
+            .company-card .image-box { 
+                width: 100%; 
+                margin: 0; 
+                border-radius: 12px 12px 0 0; 
+                border: none; 
+                border-bottom: 2px solid #DDD; 
+                box-shadow: none; 
+                height: 250px;
+            }
+            .company-card .text-box { padding: 30px; width: 100%; margin-left: 0; }
+            
+            .image-box:not(.agri-photo-grid):not(.company-card .image-box) { width: 100%; border-right: none; border-bottom: 1px solid #EEE; }
+            .agri-photo-grid { flex-direction: row; height: auto; width: 100%; border-right: none; }
+            .agri-grid-image { width: 33.33%; height: 150px; border-bottom: none; border-right: 2px solid #FFF; }
+            
+            .hero-banner { margin-bottom: 80px; padding: 30px 20px; }
+            .hero-banner h2 { font-size: 2rem; }
+            .warning-banner { padding: 30px; margin-bottom: 60px; }
+            .footer-contact-list { flex-direction: column; align-items: center; gap: 10px; }
+            .modal-content { width: 95%; margin: 10% auto; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+
+        <header>
+            <div class="logo-box">
+                <img src="images/RJS.jpg" alt="RJS Logo">
+            </div>
+            <div class="header-title">
+                <h1>RajputanaJyoti System06 - Jyoti Agent Project Information</h1>                                                                                          
+                <p>A New Generation AI Vision for Digital Bharat <img src="images/ranu.jpg.jpg.png.jpg" alt="App Icon" style="width: 75px; height: 100px; vertical-align: middle; margin-left: 8px; border-radius: 6px;"></p>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="hero-banner">
+                <h2>A. Jyoti Agent <span class="active-soon-text">[ACTIVE SOON]</span></h2>
+                <p style="font-size: 1.3rem; margin-top: 10px; opacity: 0.9;">Advanced AI Voice Assistant Powered by Multi-Sector Intelligence Gateway.</p>
+            </div>
+
+            <div class="tech-card border-company connection-card company-card">
+                <div class="image-box">
+                    <img src="images/company.png1.png" alt="Company Workspace">
+                </div>
+                <div class="text-box">
+                    <h2 style="color: #0056b3; text-transform: uppercase;">About The Company</h2>
+                    <p style="font-size: 1.15rem; color: #444; margin-top: 10px;">RajputanaJyoti System06 (OPC) Private Limited is an Indian technology startup focused on developing advanced Artificial Intelligence systems.</p>
+                    <p style="font-size: 1.15rem; color: #444; margin-top: 10px;">The company is officially <b>registered in Bhilwara District, Rajasthan</b>, and is <b>operated from Jaipur</b>. Our goal is to catalyze a truly Digital Bharat with local-language wisdom and engineering.</p>
+                    <div class="detail-tag mca-tag">
+                        ✔ MCA VERIFIED | Registered on: 18 February 2026
+                    </div>
+                    <ul class="company-contact-list">
+                        <li>📞 Phone: +91 90794-74973</li>
+                        <li>✉️ Email: rjs.rajputanajyotisystem06@gmail.com</li>
+                        <li>✉️ Pro Email: rajputanajyotisystem@rjs-06-opc.com</li>
+                        <li>🌐 Website: rjs-06-opc.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tech-card border-cloudflare connection-card">
+                <div class="image-box" style="display: flex; align-items: center; justify-content: center; background: #FFF3E0;">
+                    <img src="images/cloudflare.jpg" alt="Cloudflare Security" onerror="this.src='images/company.png1.png'" style="padding: 30px; object-fit: contain;">
+                </div>
+                <div class="text-box">
+                    <h3 style="color: #F6821F;">Cloudflare Infrastructure & Security</h3>
+                    <p>Jyoti Agent's advanced AI ecosystem is fortified and accelerated by <b>Cloudflare</b>. By leveraging Cloudflare's global edge network and high-performance serverless computing architecture, we ensure lightning-fast responses, enterprise-grade DDoS protection, and highly secure data routing. This robust structure guarantees that all user interactions remain private, incredibly fast, and always online.</p>
+                    <div class="detail-tag" style="background: #FFF3E0; color: #E65100; border-color: #E65100;">
+                        ✔ Edge Computing | Global CDN | Secure Routing
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-card border-agri connection-card">
+                <div class="image-box agri-photo-grid">
+                    <div class="agri-grid-image"><img src="images/kishan.png1.png" alt="Agriculture Data"></div>
+                    <div class="agri-grid-image"><img src="images/kishan.png2.png" alt="Farmer Assist"></div>
+                    <div class="agri-grid-image"><img src="images/kishan.png3.png" alt="AI Farming"></div>
+                </div>
+                <div class="text-box">
+                    <h3 style="color: #2E7D32;">1. Agriculture & Environment</h3>
+                    <p>Empowering farmers with instant crop intelligence and sustainable farming advice in regional dialects. Delivering real-time Weather monitoring, Air Quality (AQI) data, and soil health information directly to the fields for precision agriculture.</p>
+                </div>
+            </div>
+
+            <div class="tech-card border-edu connection-card">
+                <div class="image-box"><img src="images/indiaeducation.png" alt="Education AI"></div>
+                <div class="text-box">
+                    <h3 style="color: #1565C0;">2. Education & Skill Development</h3>
+                    <p>Democratizing knowledge across every village and town in India. Providing personalized academic tutoring and vocational guidance in native regional languages to foster an inclusive learning culture.</p>
+                </div>
+            </div>
+
+            <div class="tech-card border-health connection-card">
+                <div class="image-box"><img src="images/helthcare.png" alt="Healthcare AI"></div>
+                <div class="text-box">
+                    <h3 style="color: #EF6C00;">3. Healthcare & Wellness</h3>
+                    <p>Advancing public safety and health literacy by providing consultative information on Medicines (Pharmaceuticals), disease prevention, and correct usage, acting as a sovereign medical awareness companion.</p>
+                </div>
+            </div>
+
+            <div class="tech-card border-law connection-card">
+                <div class="image-box"><img src="images/indialaw.png" alt="Law AI"></div>
+                <div class="text-box">
+                    <h3 style="color: #4527A0;">4. Law & Citizen Rights</h3>
+                    <p>Simplifying complex legal guidance and citizen rights. Breaking down bureaucratic barriers by providing instant access to government scheme data and Jan Suchna portals in native regional accents.</p>
+                </div>
+            </div>
+
+            <div class="tech-card border-nature connection-card">
+                <div class="image-box"><img src="images/raja.jpg" alt="Nature Data" onerror="this.src='images/nature.png'"></div>
+                <div class="text-box">
+                    <h3 style="color: #00695C;">5. Nature & Forest Data</h3>
+                    <p>Utilizing AI to monitor environmental health, forest conservation initiatives, and wildlife protection data, enabling sustainable practices to build a greener, resilient future for India.</p>
+                </div>
+            </div>
+
+            <div class="tech-card border-industrial connection-card">
+                <div class="text-box" style="border: none;">
+                    <h3 style="color: #B71C1C;">6. Future Industrial Hardware Command</h3>
+                    <p>Jyoti Agent is the foundational "Operational Brain" for all next-generation industrial innovations by Rajputana Jyoti System 06. It is architecturally designed to seamlessly integrate with and wirelessly control our upcoming advanced hardware prototypes, including sustainable <b>Fuelless Energy Generators</b> for power monitoring and <b>Advanced Flying Vehicles</b> for autonomous navigation and future mobility systems.</p>
+                    <div class="detail-tag hardware-tag">✔ Connecting AI Software to Industrial Hardware</div>
+                </div>
+            </div>
+
+            <div class="tech-card border-founder connection-card">
+                <div class="text-box" style="border: none;">
+                    <h3 style="color: #FF8F00;">7. Founder's Vision & The Road Ahead</h3>
+                    <p>Founded and directed by <b>SHIV LAL SALVI</b>, the vision behind Rajputana Jyoti System 06 is not just to build a startup, but to create a massive <b>Global Tech Giant</b> originating from the grassroots of India.</p>
+                    <p>As a beginner learning and building simultaneously, the founder acknowledges the immense struggle—people often find it hard to believe in such a colossal vision coming from a single individual. However, the roadmap is clear: Jyoti Agent is merely the first project. As the company expands, we will build a robust board of directors and a large team of dedicated employees.</p>
+                    <p><b>Funding Philosophy:</b> To protect the sovereign integrity of this project, we are strictly avoiding private shareholders and foreign investors. We are seeking joint support, grants, and strategic alliances exclusively from the <b>Government of Rajasthan</b> and the <b>Central Government of India</b>.</p>
+                </div>
+            </div>
+
+            <div class="warning-banner">
+                <h2>The Final Link: Government Integration</h2>
+                <p>To successfully execute this mission, the support of the <span class="highlight-text">Government of Rajasthan</span> and the <span class="highlight-text">Central Government</span> is paramount.</p>
+                <p>Jyoti Agent's ultimate goal is to deliver real-time information regarding <b>Government Schemes, Subsidies, and Welfare Programs</b> directly to the citizens. This is impossible without official API access to <span class="highlight-text">Government Data (Jan Suchna, Bhashini, Setu API)</span>. We humbly appeal to the government for data integration, support, and necessary subsidies to bring this "Aatmanirbhar" Digital India vision to life.</p>
+            </div>
+
+            <div class="spacer-quote">
+                "Connecting the heart of Rural India to the future of Artificial Intelligence."
+            </div>
+
+        </div> <footer>
+            <div class="footer-content">
+                <h4>RajputanaJyoti System06 (OPC) Private Limited</h4>
+                
+                <ul class="footer-contact-list">
+                    <li>📞 Phone: +91 90794-74973</li>
+                    <li>✉️ Email: rjs.rajputanajyotisystem06@gmail.com</li>
+                    <li>✉️ Pro Email: rajputanajyotisystem@rjs-06-opc.com</li>
+                    <li>🌐 Website: rjs-06-opc.com</li>
+                </ul>
+
+                <p class="footer-address">
+                    <b>Official Registered Address:</b><br>
+                    Bhunas, Sahara, Gangapur, Bhilwara, Rajasthan (India)<br>
+                    PIN Code: 311802
+                </p>
+
+                <button id="privacyBtn" class="privacy-btn">📄 Read Privacy Policy & Terms</button>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                    &copy; 2026 Rajputana Jyoti System 06. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+
+    </div> 
+
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <h1>PRIVACY POLICY</h1>
+            
+            <h3>Introduction</h3>
+            <p>Welcome to the "Jyoti Agent" application (the "App"). This App is operated by Rajputana Jyoti System 06 (OPC) Private Limited (the "Company"). The Company places the highest value on your privacy and operates with complete transparency. This policy explains what information the Company collects, why it collects it, and how it is used. By using this App, you agree to this policy.</p>
+
+            <h2>1. What Information Does the Company Collect and Why?</h2>
+            <p>The Company collects only the information necessary to provide you with excellent service.</p>
+
+            <h3>1.1. Information You Provide Directly</h3>
+            <ul>
+                <li><b>Email & Mobile:</b> To identify you, verify your identity, and secure your account.</li>
+                <li><b>Device ID (IMEI):</b> To secure your account and prevent unauthorized access or misuse.</li>
+            </ul>
+
+            <h3>1.2. Google Drive Access (For AI Context & Assistance)</h3>
+            <p>To make the "Jyoti Agent" a truly personalized AI assistant, the App may request permission to access your Google Drive.</p>
+            <ul>
+                <li><b>Specific Processing:</b> The AI only reads the files necessary to answer your queries.</li>
+                <li><b>No Permanent Storage:</b> Data fetched from your Google Drive is used temporarily for AI processing. The Company DOES NOT permanently store your personal Drive files.</li>
+            </ul>
+
+            <h2>2. The Company's Promise & Your Rights</h2>
+            <p>The Company never sells, rents, or shares your email, mobile number, Google Drive data, or any other information with any third party. You may contact the Company at any time to request deletion of your account or revoke access.</p>
+
+            <hr style="margin: 40px 0; border: 1px solid #ff9800;">
+
+            <h1>TERMS AND CONDITIONS</h1>
+            
+            <h2>1. Introduction and Acceptance</h2>
+            <p>These Terms constitute a legally binding agreement between you and Rajputana Jyoti System 06 Private Limited. By using the App, you agree to be bound by these Terms.</p>
+
+            <h2>2. Purpose and Limitations</h2>
+            <p>This App is created solely for general informational purposes. All information provided within the App, whether generated by AI or from other sources, is for informational purposes only and is not professional advice.</p>
+
+            <h2>3. Account Security & Prohibited Activities</h2>
+            <ul>
+                <li>Your account can only be actively logged in on a single device at any given time.</li>
+                <li>Engaging in any unlawful activity, spreading false rumors, or attempting to reverse engineer the App is strictly forbidden.</li>
+                <li>Creating multiple accounts by a single individual is strictly prohibited.</li>
+            </ul>
+
+            <div style="border-left: 5px solid #d32f2f; background-color: #2b0000; padding: 15px; margin: 20px 0;">
+                <h2 style="color: #ff5252; margin-top: 0;">4. Governing Law and Jurisdiction (Important)</h2>
+                <ul>
+                    <li>These Terms shall be governed by and construed in accordance with the <b>laws of India</b>.</li>
+                    <li>Any dispute, claim, or legal proceeding arising out of or relating to these Terms or the App shall be subject to the exclusive jurisdiction of the <b>Rajasthan High Court, Jaipur, India</b>.</li>
+                    <li>The user agrees that any legal action must be brought solely in the Rajasthan High Court and waives any objection to the jurisdiction of this court.</li>
+                </ul>
+            </div>
+
+            <div style="border-left: 5px solid #d32f2f; background-color: #2b0000; padding: 15px; margin: 20px 0;">
+                <h2 style="color: #ff5252; margin-top: 0;">5. Employee and Company Non-Liability</h2>
+                <p>The Company and all its employees, officers, directors, agents, and representatives shall not be held liable or responsible in any manner whatsoever for any act, behavior, transaction, dispute, or activity of any user. Use of this App does not create any legal, financial, or professional relationship.</p>
+            </div>
+
+            <h2>6. Contact Information</h2>
+            <p>
+                <b>Company Name:</b> RajputanaJyoti System06 OPC Private Limited<br>
+                <b>Email:</b> rjs.rajputanajyotisystem06@gmail.com<br>
+                <b>Professional Email:</b> rajputanajyotisystem@rjs-06-opc.com<br>
+                <b>Address:</b> Bhunas, Sahara, Gangapur, Bhilwara, Rajasthan, 311802
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("privacyModal");
+        var btn = document.getElementById("privacyBtn");
+        var span = document.getElementsByClassName("close-btn")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
