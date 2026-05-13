@@ -399,6 +399,33 @@
 
         .close-btn:hover { color: #ffffff; }
 
+        /* Additional styles for modal header and legal sections */
+        .modal-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(0,0,0,0.55);
+            border-radius: 60px;
+            padding: 12px 24px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 0 15px rgba(0,255,255,0.2);
+        }
+        .modal-header img {
+            width: 48px;
+            height: 48px;
+            border-radius: 40px;
+            object-fit: cover;
+            background: #2c2c2c;
+        }
+        .modal-header h2 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 0.8px;
+            text-shadow: 0 0 8px cyan;
+            margin: 0;
+        }
         .modal-content h1 { color: #FF9800; text-align: center; border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px;}
         .modal-content h2 { color: #FF9800; margin-top: 30px; font-size: 1.4rem; }
         .modal-content h3 { color: #aaaaaa; margin-top: 20px; font-size: 1.2rem; }
@@ -586,13 +613,19 @@
 
     </div> 
 
-    <!-- Modal with FULL legal content from Flutter (no extra buttons, only close button) -->
+    <!-- Modal with FULL Flutter legal content (including header with logo) -->
     <div id="privacyModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             
-            <h1>📜 JYOTI AGENT | LEGAL AGREEMENT</h1>
-            <p style="text-align:center; margin-bottom:25px;"><strong>EFFECTIVE DATE: 26 APRIL 2026</strong><br>Rajputana Jyoti System (OPC) Pvt. Ltd.</p>
+            <!-- Flutter-style header inside modal -->
+            <div class="modal-header">
+                <img src="image/RJS.jpg" alt="RJS Logo" onerror="this.src='https://via.placeholder.com/48'">
+                <h2>RAJPUTANA JYOTI SYSTEM | LEGAL AGREEMENT</h2>
+            </div>
+            
+            <h1>📜 GLOBAL TERMS OF SERVICE & PRIVACY POLICY</h1>
+            <p style="text-align:center; margin-bottom:25px;"><strong>EFFECTIVE DATE: 26 APRIL 2026</strong></p>
 
             <h2>🏢 ABOUT THE COMPANY & FOUNDER</h2>
             <p>Rajputana Jyoti System (OPC) Pvt. Ltd. (RJS) is an Indian Deep‑Tech startup, officially registered on 18 February 2026 with the Ministry of Corporate Affairs (MCA). The Company is headquartered in Bhilwara District, Rajasthan, and operates from Jaipur. Founded and directed by Shiv Lal Salvi, RJS is built on the “Make in India” vision – to create a sovereign, secure, and globally competitive technology ecosystem originating from the grassroots of India. RJS focuses on research and development in artificial intelligence, advanced computing, privacy‑first architectures, and zero‑retention server infrastructure. The Company strictly avoids private shareholders or foreign investors, seeking only strategic alliances and grants from the Government of Rajasthan and the Central Government of India.</p>
@@ -610,7 +643,6 @@
             • Privacy‑First: microphone, camera, and location permissions are used only for real‑time interactions and environmental data (weather/AQI) – no tracking, no permanent retention.</p>
 
             <h2>⚖️ GLOBAL TERMS OF SERVICE</h2>
-            <p><strong>EFFECTIVE DATE: 26 APRIL 2026</strong></p>
             <p><strong>1. ACCEPTANCE & ELIGIBILITY:</strong> By using Jyoti Agent, you agree to these Terms. You must be at least 13 years old (13‑18 requires parental supervision). The Service is secular, unbiased, and not affiliated with any religion or political party.</p>
             <p><strong>2. SERVICE NATURE:</strong> Jyoti Agent is an information and accessibility tool – it does NOT perform financial, autonomous, or mission‑critical tasks. The Service uses third‑party servers (Cloudflare, Bhashini, Groq, etc.). RJS acts only as a routing interface and is NOT the creator of underlying models.</p>
             <p><strong>3. ACCOUNT SECURITY (SINGLE DEVICE BINDING):</strong> Your account is strictly bound to one unique device ID (UUID) at any given time. Simultaneous logins from multiple devices constitute a material breach resulting in immediate permanent suspension without notice.</p>
@@ -632,7 +664,6 @@
             <p><strong>19. CONTACT:</strong> Legal notices: rajputanajyotisystem@rjs-06-opc.com. Address: Bhunas, Sahara, Gangapur, Bhilwara, Rajasthan – 311802, India.</p>
 
             <h2>🔒 GLOBAL PRIVACY POLICY</h2>
-            <p><strong>EFFECTIVE DATE: 26 APRIL 2026</strong></p>
             <p><strong>1. DATA WE COLLECT:</strong><br>
             • Identity: Email, mobile number (with country code), name – for account creation, authentication, and sanctions screening.<br>
             • Device ID (UUID): Generated anonymously and linked to your account to enforce Single Device Binding and prevent fraud.<br>
