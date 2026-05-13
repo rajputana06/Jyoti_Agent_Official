@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     
-    <title>Jyoti Agent - Sovereign AI for Digital Bharat | RJS 06 |Jyoti information  </title>
+    <title>Jyoti Agent - Sovereign AI for Digital Bharat | RJS 06</title>
     <meta name="description" content="Jyoti Agent is an advanced Multi-Sector AI Voice Assistant by RajputanaJyoti System06 OPC Pvt Ltd. Empowering Indian farmers and citizens with local language intelligence in Agriculture, Health, Law, and Education.">
-    <meta name="keywords" content="Jyoti Agent, Rajputana Jyoti System06, Shivlal Salvi,Jyoti Agent, AI Voice Assistant, Digital Bharat, Indian AI, Agriculture AI, iStart Rajasthan">
+    <meta name="keywords" content="Jyoti_Agent, RajputanaJyoti System06, Shivlal Salvi, AI Voice Assistant, Digital Bharat, Indian AI, Agriculture AI, iStart Rajasthan">
     
     <meta property="og:title" content="Jyoti Agent - The Future of Digital Bharat">
-    <meta property="og:description" content="A Sovereign AI Ecosystem by Rajputana Jyoti System 06 OPC Pvt Ltd.">
+    <meta property="og:description" content="A Sovereign AI Ecosystem by RajputanaJyoti System06 OPC Pvt Ltd.">
     <meta property="og:image" content="image/RJS.jpg"> 
     <meta property="og:type" content="website">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,6 @@
         }
 
         body {
-            /* Background image */
             background-image: url('image/apni-photo.jpg');
             background-size: cover;
             background-position: center;
@@ -35,7 +34,6 @@
             overflow-x: hidden; 
         }
 
-        /* Transparent Light Overlay */
         .overlay {
             background-color: rgba(255, 255, 255, 0.65); 
             min-height: 100vh;
@@ -106,7 +104,7 @@
             background: linear-gradient(135deg, #004D40, #00796B);
             color: #ffffff;
             padding: 50px 50px;
-            margin-bottom: 150px; /* Long Scroll Gap */
+            margin-bottom: 150px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.25);
             border-radius: 12px;
             text-align: center;
@@ -144,7 +142,6 @@
             align-items: stretch; 
         }
 
-        /* Border Colors */
         .border-company { border-left-color: #0056b3; }
         .border-cloudflare { border-left-color: #F6821F; }
         .border-agri { border-left-color: #2E7D32; }
@@ -188,7 +185,6 @@
             word-wrap: break-word; 
         }
 
-        /* General Image Box */
         .image-box:not(.agri-photo-grid):not(.company-card .image-box) {
             width: 380px;
             flex-shrink: 0;
@@ -202,7 +198,6 @@
             display: block;
         }
 
-        /* Agriculture 3-Image Grid */
         .agri-photo-grid {
             display: flex;
             flex-direction: column;
@@ -222,7 +217,6 @@
             display: block;
         }
 
-        /* Text Content */
         .tech-card:not(.company-card) .text-box {
             padding: 50px 40px;
             display: flex;
@@ -261,7 +255,6 @@
         .company-contact-list { list-style: none; margin-top: 15px; font-size: 1.05rem; color: #333; font-weight: 500;}
         .company-contact-list li { margin-bottom: 8px; }
 
-        /* --- Warning Banner (Government Data) --- */
         .warning-banner {
             background: rgba(255, 243, 224, 0.95);
             border: 2px solid #FFB74D;
@@ -302,7 +295,6 @@
             border-radius: 8px;
         }
 
-        /* --- Footer & Privacy Button --- */
         footer {
             background: rgba(20, 25, 30, 0.98); 
             color: #FFFFFF;
@@ -362,44 +354,45 @@
             box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
         }
 
-        /* --- Modal / Popup Styling --- */
+        /* --- Modal / Popup Styling (Professional & Scrollable) --- */
         .modal {
             display: none; 
             position: fixed; 
             z-index: 1000; 
             left: 0; top: 0; width: 100%; height: 100%; 
             overflow: hidden; 
-            background-color: rgba(0,0,0,0.8); 
+            background-color: rgba(0,0,0,0.85); 
             backdrop-filter: blur(5px);
         }
 
         .modal-content {
-            background-color: #1a1a1a;
-            color: #ffffff;
+            background-color: #121212;
+            color: #f0f0f0;
             margin: 5% auto; 
-            padding: 40px;
+            padding: 40px 35px;
             border: 2px solid #FF9800;
             width: 90%; 
-            max-width: 800px;
-            max-height: 80vh;
-            border-radius: 12px;
+            max-width: 850px;
+            max-height: 85vh;
+            border-radius: 24px;
             overflow-y: auto; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
             text-align: left;
+            scroll-behavior: smooth;
         }
 
         .close-btn {
             color: #FF9800;
             float: right;
-            font-size: 35px;
+            font-size: 38px;
             font-weight: bold;
             cursor: pointer;
-            margin-top: -15px;
+            margin-top: -20px;
+            transition: 0.2s;
         }
-
         .close-btn:hover { color: #ffffff; }
 
-        /* Additional styles for modal header and legal sections */
+        /* Modal Header with Logo */
         .modal-header {
             display: flex;
             align-items: center;
@@ -426,19 +419,42 @@
             text-shadow: 0 0 8px cyan;
             margin: 0;
         }
-        .modal-content h1 { color: #FF9800; text-align: center; border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px;}
-        .modal-content h2 { color: #FF9800; margin-top: 30px; font-size: 1.4rem; }
-        .modal-content h3 { color: #aaaaaa; margin-top: 20px; font-size: 1.2rem; }
-        .modal-content p, .modal-content li { font-size: 1.05rem; line-height: 1.6; color: #dddddd; }
-        .modal-content ul { margin-left: 20px; margin-bottom: 15px; }
+
+        .modal-content h1 { 
+            color: #FF9800; 
+            text-align: center; 
+            border-bottom: 2px solid #FF9800; 
+            padding-bottom: 12px; 
+            margin: 10px 0 25px 0;
+            font-size: 1.8rem;
+        }
+        .modal-content h2 { 
+            color: #FFB74D; 
+            margin-top: 30px; 
+            font-size: 1.5rem; 
+            border-left: 4px solid #FF9800; 
+            padding-left: 15px;
+        }
+        .modal-content h3 { color: #FFB74D; margin-top: 20px; font-size: 1.3rem; }
+        .modal-content p, .modal-content li { 
+            font-size: 1rem; 
+            line-height: 1.6; 
+            color: #e0e0e0; 
+            margin-bottom: 12px;
+        }
+        .modal-content ul { margin-left: 25px; margin-bottom: 20px; }
+        .modal-content strong { color: #FFA726; }
+        .legal-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #FF9800, transparent);
+            margin: 30px 0;
+        }
 
         /* --- MOBILE RESPONSIVENESS --- */
         @media (max-width: 900px) {
             header { flex-direction: column; text-align: center; }
             .logo-box { margin-right: 0; margin-bottom: 15px; }
-            
             .tech-card, .company-card { flex-direction: column; align-items: stretch; margin-bottom: 80px; }
-            
             .company-card .image-box { 
                 width: 100%; 
                 margin: 0; 
@@ -449,16 +465,17 @@
                 height: 250px;
             }
             .company-card .text-box { padding: 30px; width: 100%; margin-left: 0; }
-            
             .image-box:not(.agri-photo-grid):not(.company-card .image-box) { width: 100%; border-right: none; border-bottom: 1px solid #EEE; }
             .agri-photo-grid { flex-direction: row; height: auto; width: 100%; border-right: none; }
             .agri-grid-image { width: 33.33%; height: 150px; border-bottom: none; border-right: 2px solid #FFF; }
-            
             .hero-banner { margin-bottom: 80px; padding: 30px 20px; }
             .hero-banner h2 { font-size: 2rem; }
             .warning-banner { padding: 30px; margin-bottom: 60px; }
             .footer-contact-list { flex-direction: column; align-items: center; gap: 10px; }
-            .modal-content { width: 95%; margin: 10% auto; padding: 20px; }
+            .modal-content { width: 95%; margin: 10% auto; padding: 25px; }
+            .modal-header h2 { font-size: 1rem; }
+            .modal-content h1 { font-size: 1.5rem; }
+            .modal-content h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
@@ -476,7 +493,6 @@
         </header>
 
         <div class="container">
-
             <div class="hero-banner">
                 <h2>A. Jyoti Agent <span class="active-soon-text">[ACTIVE SOON]</span></h2>
                 <p style="font-size: 1.3rem; margin-top: 10px; opacity: 0.9;">Advanced AI Voice Assistant Powered by Multi-Sector Intelligence Gateway.</p>
@@ -490,9 +506,7 @@
                     <h2 style="color: #0056b3; text-transform: uppercase;">About The Company</h2>
                     <p style="font-size: 1.15rem; color: #444; margin-top: 10px;">RajputanaJyoti System06 (OPC) Private Limited is an Indian technology startup focused on developing advanced Artificial Intelligence systems.</p>
                     <p style="font-size: 1.15rem; color: #444; margin-top: 10px;">The company is officially <b>registered in Bhilwara District, Rajasthan</b>, and is <b>operated from Jaipur</b>. Our goal is to catalyze a truly Digital Bharat with local-language wisdom and engineering.</p>
-                    <div class="detail-tag mca-tag">
-                        ✔ MCA VERIFIED | Registered on: 18 February 2026
-                    </div>
+                    <div class="detail-tag mca-tag">✔ MCA VERIFIED | Registered on: 18 February 2026</div>
                     <ul class="company-contact-list">
                         <li>📞 Phone: +91 90794-74973</li>
                         <li>✉️ Email: rjs.rajputanajyotisystem06@gmail.com</li>
@@ -509,9 +523,7 @@
                 <div class="text-box">
                     <h3 style="color: #F6821F;">Cloudflare Infrastructure & Security</h3>
                     <p>Jyoti Agent's advanced AI ecosystem is fortified and accelerated by <b>Cloudflare</b>. By leveraging Cloudflare's global edge network and high-performance serverless computing architecture, we ensure lightning-fast responses, enterprise-grade DDoS protection, and highly secure data routing. This robust structure guarantees that all user interactions remain private, incredibly fast, and always online.</p>
-                    <div class="detail-tag" style="background: #FFF3E0; color: #E65100; border-color: #E65100;">
-                        ✔ Edge Computing | Global CDN | Secure Routing
-                    </div>
+                    <div class="detail-tag" style="background: #FFF3E0; color: #E65100; border-color: #E65100;">✔ Edge Computing | Global CDN | Secure Routing</div>
                 </div>
             </div>
 
@@ -585,54 +597,53 @@
             <div class="spacer-quote">
                 "Connecting the heart of Rural India to the future of Artificial Intelligence."
             </div>
+        </div> 
 
-        </div> <footer>
+        <footer>
             <div class="footer-content">
                 <h4>RajputanaJyoti System06 (OPC) Private Limited</h4>
-                
                 <ul class="footer-contact-list">
                     <li>📞 Phone: +91 90794-74973</li>
                     <li>✉️ Email: rjs.rajputanajyotisystem06@gmail.com</li>
                     <li>✉️ Pro Email: rajputanajyotisystem@rjs-06-opc.com</li>
                     <li>🌐 Website: rjs-06-opc.com</li>
                 </ul>
-
                 <p class="footer-address">
                     <b>Official Registered Address:</b><br>
                     Bhunas, Sahara, Gangapur, Bhilwara, Rajasthan (India)<br>
                     PIN Code: 311802
                 </p>
-
                 <button id="privacyBtn" class="privacy-btn">📄 Read Privacy Policy & Terms</button>
-                
                 <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
                     &copy; 2026 RajputanaJyoti System06. All Rights Reserved.
                 </p>
             </div>
         </footer>
-
     </div> 
 
-    <!-- Modal with FULL Flutter legal content (including header with logo) -->
+    <!-- MODAL: Complete Flutter Legal Content with Logo Header -->
     <div id="privacyModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             
-            <!-- Flutter-style header inside modal -->
+            <!-- Header with RJS Logo and Company Name (as per Flutter design) -->
             <div class="modal-header">
                 <img src="image/RJS.jpg" alt="RJS Logo" onerror="this.src='https://via.placeholder.com/48'">
                 <h2>RAJPUTANA JYOTI SYSTEM | LEGAL AGREEMENT</h2>
             </div>
             
-            <h1>📜 GLOBAL TERMS OF SERVICE & PRIVACY POLICY</h1>
-            <p style="text-align:center; margin-bottom:25px;"><strong>EFFECTIVE DATE: 26 APRIL 2026</strong></p>
-
+            <h1>📜 GLOBAL TERMS & PRIVACY POLICY</h1>
+            <p style="text-align:center; margin-bottom:20px;"><strong>EFFECTIVE DATE: 26 APRIL 2026</strong><br>Rajputana Jyoti System (OPC) Pvt. Ltd.</p>
+            
+            <!-- ABOUT THE COMPANY (exact from Flutter) -->
             <h2>🏢 ABOUT THE COMPANY & FOUNDER</h2>
             <p>Rajputana Jyoti System (OPC) Pvt. Ltd. (RJS) is an Indian Deep‑Tech startup, officially registered on 18 February 2026 with the Ministry of Corporate Affairs (MCA). The Company is headquartered in Bhilwara District, Rajasthan, and operates from Jaipur. Founded and directed by Shiv Lal Salvi, RJS is built on the “Make in India” vision – to create a sovereign, secure, and globally competitive technology ecosystem originating from the grassroots of India. RJS focuses on research and development in artificial intelligence, advanced computing, privacy‑first architectures, and zero‑retention server infrastructure. The Company strictly avoids private shareholders or foreign investors, seeking only strategic alliances and grants from the Government of Rajasthan and the Central Government of India.</p>
-
+            
+            <!-- ABOUT THE LOGO -->
             <h2>🪔 ABOUT THE LOGO</h2>
             <p>The official logo of Rajputana Jyoti System (RJS) incorporates the map of Rajasthan, honouring the land of Rajputs – a region known for valour, heritage, and now digital innovation. The name “Rajputana” refers to the historical name of Rajasthan, representing bravery and royal legacy. “Jyoti” means light or energy, symbolising the illuminating power of artificial intelligence that drives progress. “System” denotes the complete, integrated technological ecosystem that RJS is building – from AI software to future industrial hardware. The logo therefore signifies: “From the heart of Rajasthan, we bring the light of AI as a complete system to serve India and the world.”</p>
-
+            
+            <!-- ABOUT JYOTI AGENT -->
             <h2>🤖 ABOUT JYOTI AGENT</h2>
             <p>Jyoti Agent is the flagship multi‑modal AI assistant of Rajputana Jyoti System. Key capabilities:<br>
             • Offline‑first & Wake Word support (planned updates) – enables local voice activation without continuous internet.<br>
@@ -641,8 +652,10 @@
             • Multi‑modal input: text, voice, images, PDFs, videos – processed via third‑party LLMs (Bhashini, Groq, Mistral, OpenRouter, etc.).<br>
             • Smart Memory via Google Drive (drive.file scope): with user permission, Jyoti Agent stores contextual memory only in the user’s personal Google Drive – RJS never accesses any other files.<br>
             • Privacy‑First: microphone, camera, and location permissions are used only for real‑time interactions and environmental data (weather/AQI) – no tracking, no permanent retention.</p>
-
+            
+            <!-- GLOBAL TERMS OF SERVICE (full 19 clauses) -->
             <h2>⚖️ GLOBAL TERMS OF SERVICE</h2>
+            <p><strong>EFFECTIVE DATE: 26 APRIL 2026</strong></p>
             <p><strong>1. ACCEPTANCE & ELIGIBILITY:</strong> By using Jyoti Agent, you agree to these Terms. You must be at least 13 years old (13‑18 requires parental supervision). The Service is secular, unbiased, and not affiliated with any religion or political party.</p>
             <p><strong>2. SERVICE NATURE:</strong> Jyoti Agent is an information and accessibility tool – it does NOT perform financial, autonomous, or mission‑critical tasks. The Service uses third‑party servers (Cloudflare, Bhashini, Groq, etc.). RJS acts only as a routing interface and is NOT the creator of underlying models.</p>
             <p><strong>3. ACCOUNT SECURITY (SINGLE DEVICE BINDING):</strong> Your account is strictly bound to one unique device ID (UUID) at any given time. Simultaneous logins from multiple devices constitute a material breach resulting in immediate permanent suspension without notice.</p>
@@ -662,8 +675,10 @@
             <p><strong>17. FORCE MAJEURE:</strong> RJS is not liable for delays or failures caused by events beyond its control, including third‑party API downtime, cyberattacks, natural disasters, or government actions.</p>
             <p><strong>18. MODIFICATIONS:</strong> RJS may amend these Terms at any time. Continued use after notice constitutes acceptance.</p>
             <p><strong>19. CONTACT:</strong> Legal notices: rajputanajyotisystem@rjs-06-opc.com. Address: Bhunas, Sahara, Gangapur, Bhilwara, Rajasthan – 311802, India.</p>
-
+            
+            <!-- GLOBAL PRIVACY POLICY (full 9 clauses, includes all old points) -->
             <h2>🔒 GLOBAL PRIVACY POLICY</h2>
+            <p><strong>EFFECTIVE DATE: 26 APRIL 2026</strong></p>
             <p><strong>1. DATA WE COLLECT:</strong><br>
             • Identity: Email, mobile number (with country code), name – for account creation, authentication, and sanctions screening.<br>
             • Device ID (UUID): Generated anonymously and linked to your account to enforce Single Device Binding and prevent fraud.<br>
@@ -678,8 +693,8 @@
             <p><strong>7. CHILDREN’S PRIVACY:</strong> Not for children under 13. No knowing collection.</p>
             <p><strong>8. CHANGES TO THIS POLICY:</strong> We may update this Policy. Material changes will be notified in‑app. Continued use constitutes acceptance.</p>
             <p><strong>9. CONTACT:</strong> Privacy requests: rajputanajyotisystem@rjs-06-opc.com.</p>
-
-            <hr style="margin: 30px 0; border-color: #FF9800;">
+            
+            <div class="legal-divider"></div>
             <p style="text-align:center;">By continuing to use Jyoti Agent, you acknowledge that you have read, understood, and agree to be bound by these Terms and Privacy Policy.</p>
         </div>
     </div>
